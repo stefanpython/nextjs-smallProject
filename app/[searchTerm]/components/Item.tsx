@@ -6,7 +6,7 @@ type Props = {
 
 export default function Item({ result }: Props) {
   const itemTextCol = (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center text-black">
       <h2>
         <Link
           href={`https://en.wikipedia.org/?curid=${result.pageid}`}
