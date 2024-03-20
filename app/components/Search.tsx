@@ -24,7 +24,7 @@ export default function Search() {
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="bg-white p-2 w-80 text-xl rounded-xl"
+        className="bg-white p-2 w-80 text-xl rounded-xl text-black"
         placeholder="Search"
       />
 
