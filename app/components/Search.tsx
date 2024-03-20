@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import { FormEvent } from "react";
 
 export default function Search() {
   const [search, setSearch] = useState("");
@@ -24,10 +22,9 @@ export default function Search() {
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="bg-white p-2 w-80 text-xl rounded-xl text-black"
+        className="bg-white p-2 w-80 text-xl rounded-xl"
         placeholder="Search"
       />
-
       <button className="p-2 text-xl rounded-xl bg-slate-300 ml-2 font-bold">
         🚀
       </button>
